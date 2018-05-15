@@ -9,7 +9,7 @@ const schema = Joi.object().keys({
     scheme: [
       /https?/
     ]
-  })
+  }).required()
 }).with('name', 'url');
 
 function find(name) {
