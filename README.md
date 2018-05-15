@@ -2,35 +2,37 @@
 
 A simple full stack app for creating short urls like bit.ly
 
-* [ ] Create Server Folder
-  * [ ] Init npm
-  * [ ] Add express morgan body-parser nodemon
-  * [ ] Add start script and dev script
-* [ ] Create public Folder
-  * [ ] Create index.html
-    * [ ] Add vue CDN
-    * [ ] Add bulma CSS
-    * [ ] Homepage Layout
-  * [ ] Serve public folder from express
-* [ ] Create new url form on client
-  * [ ] Submit form - fetch POST to server
-    * [ ] Show any errors
-    * [ ] Show create link on page
+puny.li/cg
+
+* [x] Create Server Folder
+  * [x] Init npm
+  * [x] Add express morgan body-parser nodemon
+  * [x] Add start script and dev script
+* [x] Create public Folder
+  * [x] Create index.html
+    * [x] Add vue CDN
+    * [x] Add bulma CSS
+    * [x] Homepage Layout
+  * [x] Serve public folder from express
+* [x] Create new url form on client
 * [ ] Add DB to server
-  * [ ] Add monk
-  * [ ] Create db folder
-    * [ ] Create db connection
+  * [x] Add monk
+  * [x] Create db folder
+    * [x] Create db connection
   * [ ] Create route to add url to db `/api/url`
-    * [ ] validate url with joi
+    * [x] validate puny with joi
       * url
-      * name alphanum, min 5 chars, max 100 chars
-    * [ ] Make sure name is not in use
-      * [ ] insert url into db
-      * [ ] respond with inserted message
-    * [ ] Respond with error if in use
-* [ ] Create route to redirect a url
-  * [ ] Search by name - if found, redirect to url
-    * [ ] If not found, show 404
+      * name alphanum, min 1 chars, max 100 chars
+    * [x] Make sure name is not in use
+      * [x] insert url into db
+      * [x] respond with inserted message
+    * [x] Respond with error if in use
+* [x] Submit form - fetch POST to server
+  * [x] Show any errors
+  * [x] Show create link on page
+* [x] Create route to redirect a url
+  * [x] Search by name - if found, redirect to url
+    * [x] If not found, show 404
 * [ ] Deploy!
 * [ ] Alias domain
 

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>puny.li - Shortening URLs since 2018</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://jenil.github.io/bulmaswatch/lumen/bulmaswatch.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section class="hero is-medium is-primary is-bold">
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="title">
+           puny.li
+        </h1>
+        <h2 class="subtitle">
+           Shortening URLs since 2018
+        </h2>
+      </div>
+    </div>
+  </section>
+  <main>
+    <h1 class="title is-1" style="text-align: center"><span id="name" class="has-text-danger"></span> was not found. You can create it <a href="/">here.</a></h1>
+  </main>
+  <script>
+    const name = new URLSearchParams(window.location.search).get('name');
+    document.querySelector('#name').textContent = name;
+  </script>
+</body>
+</html>
