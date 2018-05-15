@@ -23,16 +23,14 @@ A simple full stack app for creating short urls like bit.ly
   * [ ] Create route to add url to db `/api/url`
     * [ ] validate url with joi
       * url
-      * slug - optional, alphanum, min 5 chars, max 100 chars
-    * [ ] Generate code
-    * [ ] Make sure slug is not in use
+      * name alphanum, min 5 chars, max 100 chars
+    * [ ] Make sure name is not in use
       * [ ] insert url into db
       * [ ] respond with inserted message
     * [ ] Respond with error if in use
 * [ ] Create route to redirect a url
-  * [ ] Search by code - if found, redirect
-    * [ ] If code not found, search by slug - if found, redirect
-      * [ ] If not found, show 404
+  * [ ] Search by name - if found, redirect to url
+    * [ ] If not found, show 404
 * [ ] Deploy!
 * [ ] Alias domain
 
@@ -40,6 +38,3 @@ A simple full stack app for creating short urls like bit.ly
 * [ ] Log links to a click
   * [ ] Date/Time
 * [ ] View link page to see number of clicks
-* [ ] edit - unique code to allow edit of slug
-* [ ] Edit page on frontend
-* [ ] Edit route on backend
